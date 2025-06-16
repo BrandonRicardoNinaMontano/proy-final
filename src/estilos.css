@@ -1,0 +1,110 @@
+/* estilos.css */
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center; /* Centrado horizontal */
+  align-items: center;     /* Centrado vertical */
+  background-color: #f0f0f0; /* Opcional: fondo neutro */
+}
+
+.layout {
+  max-width: 960px;
+  margin: 0 auto; /* Centra horizontalmente */
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Opcional */
+  padding: 20px;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#root {
+  height: 100%;
+}
+
+.layout {
+  min-height: 100vh; /* Ocupa todo el alto de la ventana */
+  display: flex;
+  flex-direction: column;
+}
+
+.contenido-principal {
+  flex: 1; /* Hace que el contenido principal crezca y ocupe el espacio disponible */
+  padding: 2rem;
+  background-color: #f0f0f0;
+}
+
+.barra-titulo {
+  background-color: #a50505;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+.menu {
+  background-color: #00bcd4;
+  padding: 0.5rem;
+}
+
+.menu ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.contenido-principal {
+  padding: 2rem;
+  background-color: #f0f0f0;
+  min-height: 400px;
+}
+
+.footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+.tarjetas-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.tarjeta-actor {
+  width: 200px;
+  text-align: center;
+  background-color: white;
+  padding: 1rem;
+  border-radius: 1rem;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+.imagen-actor {
+  width: 150px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%; /* óvalo */
+  margin-bottom: 0.5rem;
+}
+
+.botones-peliculas {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+}
